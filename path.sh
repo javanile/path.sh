@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
+file=~/.bashrc
 
-file=aa
+path_generator () {
+  echo "export PATH=\"\$HOME/bin:\$PATH\""
+}
 
-(
-  echo 'export PATH="$HOME/bin:$PATH"'
-) >> ${file}
-
+path_generator >> ${file}
